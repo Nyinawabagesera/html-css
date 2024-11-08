@@ -1,160 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            padding: 40px;
-            background-color: white;
-        }
-        header p {
-            margin: 0;
-            color: black;
-        }
-        .header-links {
-            display: flex;
-            gap: 15px;
-            color: white;
-        }
-        .image-background {
-            background-image: url('./images/image1.jpeg');
-            background-size: cover;
-            background-position: center;
-            height: 500px;
-            padding: 20px;
-            color: white;
-            display: flex;
-            flex-direction: column;
-        }
-        .search-container {
-            display: flex;
-            gap: 10px;
-            flex-wrap: wrap;
-            margin-top: 140px;
-            background-color: white;
-            border-radius: 10px;
-            border: 1px solid rgb(88, 86, 86);
-            padding: 10px;
-        }
-        .search-box {
-            border-radius: 10px;
-            border: 1px solid rgb(88, 86, 86);
-            padding: 5px;
-            flex: 1;
-            color: black;
-            background-color: white;
-        }
-        .active-box {
-            background-color: rgb(34, 31, 31);
-            color: white;
-            border: 1px solid #444;
-            border-radius: 50px;
-        }
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 40px;
+        background-color: white;
+      }
+      header p {
+        margin: 0;
+        color: black;
+      }
+      .header-links {
+        display: flex;
+        gap: 15px;
+        color: white;
+      }
+      .image-background {
+        background-image: url("./images/image1.jpeg");
+        background-size: cover;
+        background-position: center;
+        height: 500px;
+        padding: 20px;
+        color: white;
+        display: flex;
+        flex-direction: column;
+      }
+      .search-container {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+        margin-top: 140px;
+        background-color: white;
+        border-radius: 10px;
+        border: 1px solid rgb(88, 86, 86);
+        padding: 10px;
+      }
+      .search-box {
+        border-radius: 10px;
+        border: 1px solid rgb(88, 86, 86);
+        padding: 5px;
+        flex: 1;
+        color: black;
+        background-color: white;
+      }
+      .active-box {
+        background-color: rgb(34, 31, 31);
+        color: white;
+        border: 1px solid #444;
+        border-radius: 50px;
+      }
 
-        .image-row {
-            display: flex;
-            gap: 15px;
-            flex-wrap: nowrap;
-            justify-content: center;
-            margin-top: 20px;
-            overflow-x: auto;
-            max-width: 100%;
-        }
+      .image-row {
+        display: flex;
+        gap: 15px;
+        flex-wrap: nowrap;
+        justify-content: center;
+        margin-top: 20px;
+        overflow-x: auto;
+        max-width: 100%;
+      }
 
-        .image-container {
-            position: relative;
-        }
+      .image-container {
+        position: relative;
+      }
 
-        .image-row img {
-            width: 200px; 
-            height: 250px; 
-            object-fit: cover; 
-            border-radius: 5px; 
-        }
+      .image-row img {
+        width: 200px;
+        height: 250px;
+        object-fit: cover;
+        border-radius: 5px;
+      }
 
-        .image-text {
-            position: absolute;
-            bottom: 10px;
-            left: 10px;
-            color: white;
-            font-size: 15px;
-            padding: 5px;
-            border-radius: 5px;
-        }
+      .image-text {
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
+        color: white;
+        font-size: 15px;
+        padding: 5px;
+        border-radius: 5px;
+      }
     </style>
-</head>
-<body>
-
+  </head>
+  <body>
     <header>
-        <div>
-            <p style="color: blue;">FeWo-direkt</p>
-        </div>
-        <div class="header-links">
-            <p>Download app</p>
-            <p>Travel planner</p>
-            <p>Registration accommodation</p>
-            <p>Help</p>
-            <p>My travels</p>
-            <p>Register</p>
-        </div>
+      <div>
+        <p style="color: blue">FeWo-direkt</p>
+      </div>
+      <div class="header-links">
+        <p>Download app</p>
+        <p>Travel planner</p>
+        <p>Registration accommodation</p>
+        <p>Help</p>
+        <p>My travels</p>
+        <p>Register</p>
+      </div>
     </header>
 
     <div class="image-background">
-        <p style="font-size: 50px; font-weight:bold;top:100px">Everything is fine, you book with FeWo-direkt</p>
-        <div class="search-container">
-            <div class="search-box">
-                <p>Where should we go?</p>
-            </div>
-            <div class="search-box">
-                <p>Data</p>
-            </div>
-            <div class="search-box">
-                <p>Guests</p>
-            </div>
-            <div class="search-box active-box">
-                <p>Seeks</p>
-            </div>
+      <p style="font-size: 50px; font-weight: bold; top: 100px">
+        Everything is fine, you book with FeWo-direkt
+      </p>
+      <div class="search-container">
+        <div class="search-box">
+          <p>Where should we go?</p>
         </div>
+        <div class="search-box">
+          <p>Data</p>
+        </div>
+        <div class="search-box">
+          <p>Guests</p>
+        </div>
+        <div class="search-box active-box">
+          <p>Seeks</p>
+        </div>
+      </div>
     </div>
 
     <p>Find accommodation to suit your taste</p>
 
     <div class="image-row">
-        <div class="image-container">
-            <img src="./images/image2.jpeg" alt="Image 2">
-            <div class="image-text">holiday home</div>
-        </div>
-        <div class="image-container">
-            <img src="./images/image3.jpeg" alt="Image 3">
-            <div class="image-text">Holiday appartment</div>
-        </div>
-        <div class="image-container">
-            <img src="./images/image4.jpeg" alt="Image 4">
-            <div class="image-text">Holiday cottage</div>
-        </div>
-        <div class="image-container">
-            <img src="./images/image5.jpeg" alt="Image 5">
-            <div class="image-text">country house</div>
-        </div>
-        <div class="image-container">
-            <img src="./images/image6.jpeg" alt="Image 6">
-            <div class="image-text">Villa</div>
-        </div>
-        <div class="image-container">
-            <img src="./images/image7.jpeg" alt="Image 7">
-            <div class="image-text">Chalet</div>
-        </div>
+      <div class="image-container">
+        <img src="./images/image2.jpeg" alt="Image 2" />
+        <div class="image-text">holiday home</div>
+      </div>
+      <div class="image-container">
+        <img src="./images/image3.jpeg" alt="Image 3" />
+        <div class="image-text">Holiday appartment</div>
+      </div>
+      <div class="image-container">
+        <img src="./images/image4.jpeg" alt="Image 4" />
+        <div class="image-text">Holiday cottage</div>
+      </div>
+      <div class="image-container">
+        <img src="./images/image5.jpeg" alt="Image 5" />
+        <div class="image-text">country house</div>
+      </div>
+      <div class="image-container">
+        <img src="./images/image6.jpeg" alt="Image 6" />
+        <div class="image-text">Villa</div>
+      </div>
+      <div class="image-container">
+        <img src="./images/image7.jpeg" alt="Image 7" />
+        <div class="image-text">Chalet</div>
+      </div>
     </div>
-
-</body>
+    <ImageBackground>
+      <img src="./images/image8.jpeg" alt="" />
+      <p>Browse weekend trips</p>
+      <p>Offers for the period: 13 Dec. -15 Dec.</p>
+      <div><img src="./images/image9.jpeg" alt="" /></div>
+      <div><img src="./images/image10.jpeg" alt="" /></div>
+      <div><img src="./images/image11.jpeg" alt="" /></div>
+      <div><img src="./images/image12.jpeg" alt="" /></div>
+      <div><img src="./images/image13.jpeg" alt="" /></div>
+      <div><img src="./images/image14.jpeg" alt="" /></div>
+      <div><img src="./images/image15.jpeg" alt="" /></div>
+    </ImageBackground>
+  </body>
 </html>
