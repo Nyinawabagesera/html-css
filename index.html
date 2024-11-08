@@ -4,8 +4,91 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 40px;
+            background-color: white;
+        }
+        header p {
+            margin: 0;
+            color:black;
+        }
+        .header-links {
+            display: flex;
+            gap: 15px;
+            color: white;
+        }
+        .image-background {
+            background-image: url('./images/image1.jpeg'); /* Add your image URL here */
+            background-size: cover;
+            background-position: center;
+            height: 500px;
+            padding: 20px;
+            color: white;
+            display: flex;
+            flex-direction: column;
+        }
+        .search-container {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            height: 5px;
+            margin-top: 140px;
+        }
+        .search-box {
+            border-radius: 10px;
+            border: 1px solid black;
+            padding: 10px;
+            flex: 1;
+        }
+        .active-box {
+            background-color: rgb(34, 31, 31);
+            color: white;
+            border: 1px solid #444;
+        }
+    </style>
 </head>
 <body>
-    <h1>Hello, World!</h1>
+
+    <header>
+        <div>
+            <p style="color: blue;">FeWo-direkt</p>
+        </div>
+        <div class="header-links">
+            <p>Download app</p>
+            <p>Travel planner</p>
+            <p>Registration accommodation</p>
+            <p>Help</p>
+            <p>My travels</p>
+            <p>Register</p>
+        </div>
+    </header>
+
+    <div class="image-background">
+        <p style="font-size: 50px; font-weight:bold;top:100px">Everything is fine, you book with FeWo-direkt</p>
+        <div class="search-container">
+            <div class="search-box">
+                <p>Where should we go?</p>
+            </div>
+            <div class="search-box">
+                <p>Data</p>
+            </div>
+            <div class="search-box">
+                <p>Guests</p>
+            </div>
+            <div class="search-box active-box">
+                <p>Seeks</p>
+            </div>
+        </div>
+    </div>
+
 </body>
 </html>
