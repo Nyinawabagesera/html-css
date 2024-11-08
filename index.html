@@ -65,18 +65,32 @@
             display: flex;
             gap: 15px;
             flex-wrap: nowrap;
-            justify-content: center; 
+            justify-content: center;
             margin-top: 20px;
-            overflow-x: auto; 
-            max-width: 100%; 
+            overflow-x: auto;
+            max-width: 100%;
+        }
+
+        .image-container {
+            position: relative;
         }
 
         .image-row img {
-            width: 200px;
-            height: 250px;
+            width: 200px; 
+            height: 250px; 
             object-fit: cover; 
             border-radius: 5px; 
+        }
 
+        .image-text {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            color: white;
+            font-size: 15px;
+            padding: 5px;
+            border-radius: 5px;
+        }
     </style>
 </head>
 <body>
@@ -116,23 +130,29 @@
     <p>Find accommodation to suit your taste</p>
 
     <div class="image-row">
-        <div>
+        <div class="image-container">
             <img src="./images/image2.jpeg" alt="Image 2">
+            <div class="image-text">holiday home</div>
         </div>
-        <div>
+        <div class="image-container">
             <img src="./images/image3.jpeg" alt="Image 3">
+            <div class="image-text">Holiday appartment</div>
         </div>
-        <div>
+        <div class="image-container">
             <img src="./images/image4.jpeg" alt="Image 4">
+            <div class="image-text">Holiday cottage</div>
         </div>
-        <div>
+        <div class="image-container">
             <img src="./images/image5.jpeg" alt="Image 5">
+            <div class="image-text">country house</div>
         </div>
-        <div>
+        <div class="image-container">
             <img src="./images/image6.jpeg" alt="Image 6">
+            <div class="image-text">Villa</div>
         </div>
-        <div>
+        <div class="image-container">
             <img src="./images/image7.jpeg" alt="Image 7">
+            <div class="image-text">Chalet</div>
         </div>
     </div>
 
